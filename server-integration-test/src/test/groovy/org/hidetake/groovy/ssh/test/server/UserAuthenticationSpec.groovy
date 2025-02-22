@@ -304,7 +304,7 @@ class UserAuthenticationSpec extends Specification {
         executeCommand()
 
         then:
-        thrown(IllegalArgumentException)
+        thrown(JSchException)
     }
 
     def "remote specific identity should precede one in global settings"() {
